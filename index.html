@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"
+            src="https://maps.google.com/maps/api/js?key=AIzaSyAJajI6d_rdGz8boTGH9BHYnpT8wLlD-lQ"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div id="container">
+    <div class="list-btn">
+        <ul class="btn">
+            <li class="texta-btn start">Click me and see your location...</li>
+            <li class="textb-btn weather">Click me and see the weather...</li>
+        </ul>
+    </div>
+    <div id="location-container" class="hide">
+        <ul class="location-items">
+            <li class="btn-close1">&#x2718;</li>
+            <li id="map"></li>
+            <li class="address">
+                <p class="location-container"><span id="location-msg"></span></p></li>
+        </ul>
+    </div>
+    <div id="temp-container" class="hide">
+        <div class="temp-items">
+        <ul class="temp-data">
+            <li class="temp-text">Temperature:</li>
+            <li class="temp-text showtemp"></li>
+            <li class="temp-text convert">
+                <span class="changeletter celsius">°C</span>
+            </li>
+        </ul>
+        <ul class="temp-icon">
+            <li class="icon"></li>
+        </ul>
+        </div>
+        <div id="description-items">
+            <ul class="temp-description">
+                <li class = "description-text">Description:</li>
+                <li class = "description-text showdescription"></li>
+            </ul>
+            <ul class="temp-wind">
+                <li class = "wind-text">Wind Speed:</li>
+                <li class = "wind-text showwind"></li>
+                <li class = "wind-text">km/h</li>
+            </ul>
+        </div>
+        <div id="moredata-items">
+            <ul class="temp-pressure">
+                <li class = "pressure-text">Pressure:</li>
+                <li class = "pressure-text showdpressure"></li>
+                <li class = "pressure-text">Pa</li>
+            </ul>
+            <ul class="temp-humidity">
+                <li class = "humidity-text">Humidity:</li>
+                <li class = "humidity-text showhumidity"></li>
+                <li class = "humidity-text">%</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/geolocation.js"></script>
+<script src="js/userview.js"></script>
+<script src="js/weather.js"></script>
+</body>
+</html>
+
+
